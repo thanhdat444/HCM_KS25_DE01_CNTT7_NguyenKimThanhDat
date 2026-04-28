@@ -112,9 +112,5 @@ WHERE price BETWEEN 10000000 AND 20000000;
 SELECT product_id FROM Order_Detail
 WHERE order_id = 1;
 
-SELECT product_id FROM Products
-WHERE product_name = 'MacBook Air M2';
-
 SELECT order_id FROM Order_Detail
-WHERE product_id = (SELECT product_id FROM Products
-					WHERE product_name = 'MacBook Air M2');
+WHERE product_id = 6;
