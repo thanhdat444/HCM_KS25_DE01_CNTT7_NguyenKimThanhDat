@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="HCM_KS25_DE01_CNTT7_NguyenKimThanhDat" id="tN5RUZCEnjDkqMcRJPeX">
+    <mxGraphModel dx="1548" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QgFMhagEiACOwWJoQyim-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Customer&#xa;PK: customer_id&#xa;full_name&#xa;email&#xa;phone&#xa;address" vertex="1">
+          <mxGeometry height="120" width="220" x="210" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order&#xa;PK: order_id&#xa;orderDate&#xa;totalAmount&#xa;FK: customer_id" vertex="1">
+          <mxGeometry height="120" width="220" x="210" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Product&#xa;PK: product_id&#xa;product_name&#xa;manufacturer&#xa;price&#xa;stock" vertex="1">
+          <mxGeometry height="140" width="220" x="200" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order_Detail&#xa;PK: order_id, product_id&#xa;FK: order_id&#xa;FK: product_id&#xa;quantity&#xa;price" vertex="1">
+          <mxGeometry height="150" width="260" x="500" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-5" edge="1" parent="1" source="QgFMhagEiACOwWJoQyim-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="QgFMhagEiACOwWJoQyim-2" value="1 - N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-6" edge="1" parent="1" source="QgFMhagEiACOwWJoQyim-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="QgFMhagEiACOwWJoQyim-4" value="1 - N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QgFMhagEiACOwWJoQyim-7" edge="1" parent="1" source="QgFMhagEiACOwWJoQyim-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="QgFMhagEiACOwWJoQyim-4" value="1 - N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
